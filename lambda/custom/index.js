@@ -54,7 +54,7 @@ const HelpHandler = {
     handle(handlerInput) {
       return handlerInput.responseBuilder
         .speak(HELP_MESSAGE)
-        .reprompt(REPROMPT_MESSAGE))
+        .reprompt(REPROMPT_MESSAGE)
         .getResponse();
     },
 };
