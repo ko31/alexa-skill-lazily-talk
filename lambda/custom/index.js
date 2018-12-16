@@ -3,15 +3,16 @@ const Alexa = require('ask-sdk-core');
 const SKILL_NAME = "テキトーク";
 const FALLBACK_MESSAGE = "";
 const FALLBACK_REPROMPT = "";
-const HELP_MESSAGE = "テキトークは会話ができるスキルです。気軽に何か話しかけてみてください。テキトークをやめる時は「終わる」と言ってくださいね。";
+const HELP_MESSAGE = "テキトークはAlexaと適当な会話が楽しめます。何でも気軽に話しかけてみてください。テキトークをやめる時は「終わる」と言ってくださいね。";
 const REPROMPT_MESSAGE = "何か話しかけてみてください。";
 const ERROR_MESSAGE = "ごめんなさい。わかりませんでした";
 const STOP_MESSAGE = '<say-as interpret-as="interjection">またいつでもどうぞ</say-as>';
 
+const reactions = require('./reactions');
 const comments = require('./comments');
 
 function convertSound(message) {
-    message = '<voice name="Matthew"><lang xml:lang="ja-JP">' + message + '</lang></voice>';
+    message = '<voice name="Mizuki"><lang xml:lang="ja-JP">' + message + '</lang></voice>';
     return message;
 }
 
@@ -36,8 +37,10 @@ const GetTalkHandler = {
           && request.intent.name === 'GetTalkIntent');
     },
     handle(handlerInput) {
-      let message = comments.value[Math.floor(Math.random() * comments.value.length)];
-      message = convertSound(message);
+      let reaction = reactions.value[Math.floor(Math.random() * reactions.value.length)];
+      let comment = comments.value[Math.floor(Math.random() * comments.value.length)];
+      let message = reaction + '<break time="0.2s"/>' + comment;
+//      message = convertSound(message);
       return handlerInput.responseBuilder
         .speak(message)
         .reprompt(message)
