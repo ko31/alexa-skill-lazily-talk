@@ -1,0 +1,40 @@
+{
+  "deploy_settings": {
+    "ask_cli": {
+      "skill_id": "amzn1.ask.skill.d7b57288-246c-4029-92fe-ea245d159118",
+      "was_cloned": false,
+      "merge": {
+        "manifest": {
+          "apis": {
+            "custom": {
+              "endpoint": {
+                "uri": "ask-custom-lazily-talk-ask_cli"
+              }
+            }
+          }
+        }
+      },
+      "resources": {
+        "manifest": {
+          "eTag": "c19b58825543b8e8901d708d1bcfecdb"
+        },
+        "interactionModel": {
+          "ja-JP": {
+            "eTag": "ea1839d42d961a78d5ec334295d9652c"
+          }
+        },
+        "lambda": [
+          {
+            "arn": "arn:aws:lambda:us-east-1:611028675699:function:ask-custom-lazily-talk-ask_cli",
+            "functionName": "arn:aws:lambda:us-east-1:611028675699:function:ask-custom-lazily-talk-ask_cli",
+            "awsRegion": "us-east-1",
+            "alexaUsage": [
+              "custom/default"
+            ],
+            "revisionId": "64a8b852-d9bb-472c-9806-9a527994e2fc"
+          }
+        ]
+      }
+    }
+  }
+}
