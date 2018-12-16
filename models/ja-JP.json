@@ -1,0 +1,49 @@
+{
+	"interactionModel": {
+		"languageModel": {
+			"invocationName": "テキトーク",
+			"intents": [
+				{
+					"name": "AMAZON.CancelIntent",
+					"samples": []
+				},
+				{
+					"name": "AMAZON.HelpIntent",
+					"samples": []
+				},
+				{
+					"name": "AMAZON.StopIntent",
+					"samples": []
+				},
+				{
+					"name": "GetTalkIntent",
+					"slots": [
+						{
+							"name": "any",
+							"type": "any"
+						}
+					],
+					"samples": [
+						"{any}"
+					]
+				},
+				{
+					"name": "AMAZON.NavigateHomeIntent",
+					"samples": []
+				}
+			],
+			"types": [
+				{
+					"name": "any",
+					"values": [
+						{
+							"name": {
+								"value": "any"
+							}
+						}
+					]
+				}
+			]
+		}
+	}
+}
