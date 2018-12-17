@@ -6,8 +6,8 @@
 					"summary": "テキトークはあなたとテキトーな会話をしてくれるスキルです。",
 					"examplePhrases": [
 						"アレクサ、テキトークを開いて",
-						"アレクサ、テキトークを始めて",
-						"アレクサ、テキトーク"
+						"アレクサ、テキトークをスタートして",
+						"アレクサ、テキトークを起動して"
 					],
 					"keywords": [
 						"トーク",
@@ -17,7 +17,7 @@
 					"smallIconUri": "https://s3-ap-northeast-1.amazonaws.com/gosign-alexa-assets/lazily-talk/icon_small.png",
 					"largeIconUri": "https://s3-ap-northeast-1.amazonaws.com/gosign-alexa-assets/lazily-talk/icon_large.png",
 					"name": "テキトーク",
-					"description": "テキトークはあなたとテキトーな会話をしてくれるスキルです。\n相手は適当な会話しかしませんが大きな心で話してあげてください。\n\nこのスキルを始めるには、\n\"アレクサ、テキトークを開いて\"\n\"アレクサ、テキトークを始めて\"\n\"のように話しかけてみてください。"
+					"description": "テキトークはあなたとテキトーな会話をしてくれるスキルです。\n相手は適当な会話しかしませんが大きな心で話してあげてください。\n\nこのスキルを始めるには、\n\"アレクサ、テキトークを開いて\"\n\"アレクサ、テキトークをスタートして\"\n\"のように話しかけてみてください。"
 				}
 			},
 			"isAvailableWorldwide": false,
