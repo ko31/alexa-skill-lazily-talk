@@ -3,7 +3,7 @@
 		"publishingInformation": {
 			"locales": {
 				"ja-JP": {
-					"summary": "テキトークはあなたの会話の相手になってくれるスキルです。",
+					"summary": "テキトークはあなたとテキトーな会話をしてくれるスキルです。",
 					"examplePhrases": [
 						"アレクサ、テキトークを開いて",
 						"アレクサ、テキトークを始めて",
@@ -14,10 +14,10 @@
 						"会話",
 						"話"
 					],
-					"smallIconUri": "https://s3-ap-northeast-1.amazonaws.com/gosign-alexa-assets/penalty-game/icon_small.png",
-					"largeIconUri": "https://s3-ap-northeast-1.amazonaws.com/gosign-alexa-assets/penalty-game/icon_large.png",
+					"smallIconUri": "https://s3-ap-northeast-1.amazonaws.com/gosign-alexa-assets/lazily-talk/icon_small.png",
+					"largeIconUri": "https://s3-ap-northeast-1.amazonaws.com/gosign-alexa-assets/lazily-talk/icon_large.png",
 					"name": "テキトーク",
-					"description": "テキトークはあなたの会話の相手になってくれるスキルです。\n相手は適当な会話しかしませんが大きな心で話してあげてください。\n\nこのスキルを始めるには、\n\"アレクサ、テキトークを開いて\"\n\"アレクサ、テキトークを始めて\"\n\"のように話しかけてみてください。"
+					"description": "テキトークはあなたとテキトーな会話をしてくれるスキルです。\n相手は適当な会話しかしませんが大きな心で話してあげてください。\n\nこのスキルを始めるには、\n\"アレクサ、テキトークを開いて\"\n\"アレクサ、テキトークを始めて\"\n\"のように話しかけてみてください。"
 				}
 			},
 			"isAvailableWorldwide": false,

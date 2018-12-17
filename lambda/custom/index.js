@@ -1,12 +1,12 @@
 const Alexa = require('ask-sdk-core');
 
 const SKILL_NAME = "テキトーク";
-const FALLBACK_MESSAGE = "";
-const FALLBACK_REPROMPT = "";
-const HELP_MESSAGE = "テキトークはAlexaと適当な会話が楽しめます。何でも気軽に話しかけてみてください。テキトークをやめる時は「終わる」と言ってくださいね。";
+const HELP_MESSAGE = 'テキトークはあなたとテキトーな会話をしてくれます。何でも気軽に話しかけてみてください。<break time="0.2s"/>テキトークをやめる時は「終わる」と言ってくださいね。';
 const REPROMPT_MESSAGE = "何か話しかけてみてください。";
 const ERROR_MESSAGE = "ごめんなさい。わかりませんでした";
 const STOP_MESSAGE = '<say-as interpret-as="interjection">またいつでもどうぞ</say-as>';
+const FALLBACK_MESSAGE = "";
+const FALLBACK_REPROMPT = "";
 
 const reactions = require('./reactions');
 const comments = require('./comments');
