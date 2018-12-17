@@ -22,9 +22,12 @@ const LaunchRequestHandler = {
       return request.type === 'LaunchRequest';
     },
     handle(handlerInput) {
+      const smallImageUrl = 'https://s3-ap-northeast-1.amazonaws.com/gosign-alexa-assets/lazily-talk/woman-720x480.png';
+      const largeImageUrl = 'https://s3-ap-northeast-1.amazonaws.com/gosign-alexa-assets/lazily-talk/woman-1200x800.png';
       return handlerInput.responseBuilder
         .speak(HELP_MESSAGE)
         .reprompt(REPROMPT_MESSAGE)
+        .withStandardCard(SKILL_NAME, REPROMPT_MESSAGE, smallImageUrl, largeImageUrl)
         .getResponse();
     },
 };
