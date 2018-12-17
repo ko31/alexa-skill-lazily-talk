@@ -43,7 +43,7 @@ const GetTalkHandler = {
 //      message = convertSound(message);
       return handlerInput.responseBuilder
         .speak(message)
-        .reprompt(message)
+        .reprompt(REPROMPT_MESSAGE)
         .getResponse();
     },
   };
